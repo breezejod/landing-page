@@ -1,18 +1,23 @@
 import React from 'react';
-
-const navData = [
-    { name: "Home", link: "/" },
-    { name: "Header", link: "/" },
-    { name: "Body", link: "/" },
-    { name: "Footer", link: "/" }
-];
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <div>
-            <Nav className="navbar navbar-expand-lg fixed-top"/> 
-        </div>
+        <nav className="bg-blue-500 p-4">
+            <ul className="flex space-x-4">
+                <li>
+                    <Link to="/" className="text-white">Home</Link>
+                </li>
+                <li>
+                    <Link to="/" className="text-white">Contact</Link>
+                </li>
+                <li>
+                    <Link to="/" className="text-white">About Us</Link>
+                </li>
+            </ul>
+        </nav>
     );
 };
 
 export default Nav;
+

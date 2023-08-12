@@ -1,13 +1,8 @@
 import './index.css';
+import Nav from './components/nav/Nav';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          hii
-        </p>
-      </header>
-    </div>
+     <Nav/>
   );
 }
 
